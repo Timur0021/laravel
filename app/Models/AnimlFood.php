@@ -8,4 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class AnimlFood extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'food_name',
+        'quantity',
+        'unit',
+    ];
 }

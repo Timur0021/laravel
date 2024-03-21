@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\Zoo\AnimalController;
+use App\Http\Controllers\Zoo\EmployeesController;
+use App\Http\Controllers\Zoo\FoodController;
 use App\Http\Controllers\Zoo\ZooController;
 use Illuminate\Support\Facades\Route;
 
@@ -19,3 +22,6 @@ Route::get('/', function () {
 });
 
 Route::get('/zoo', [ZooController::class, 'index'])->name('zoo');
+Route::get('/animal', [AnimalController::class, 'index'])->name('animal');
+Route::get('/employees', [EmployeesController::class, 'index'])->name('employees');
+Route::get('/food', [FoodController::class, 'index'])->name('food');
